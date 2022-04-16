@@ -1,0 +1,53 @@
+.header .container .navbar-nav .dropdown-toggle::after {
+  content: none;
+}
+
+.header .container {
+  background: transparent;
+  padding: 0px 15px;
+}
+.header .navbar-nav {
+  padding: 40px 0px 20px 0px;
+}
+.header {
+  z-index: 2;
+  background-image: linear-gradient(
+      to right,
+      rgb(236 98 6 / 98%),
+      rgb(5 3 0 / 83%)
+    ),
+    url(../img/banner2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 350px;
+}
+.header .navbar-light .navbar-brand {
+  font-size: 36px;
+  font-weight: 700px;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 992px) {
+  #navbarNavDropdown {
+    display: flex;
+    flex-basis: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 600px) {
+  #navbarNavDropdown .d-flex {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
